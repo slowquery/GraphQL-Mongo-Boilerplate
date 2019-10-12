@@ -65,3 +65,14 @@ mutation($Email: String!, $Pass:String!){
   "Pass": "P@ssW0rd"
 }
 ```
+
+### 전체 유저 목록
+```
+{
+  Users {
+    _id,
+    Email,
+    Name
+  }
+}
+```
