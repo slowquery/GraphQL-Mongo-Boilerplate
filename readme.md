@@ -31,7 +31,7 @@ SECRET=앱시크릿키
 ```
 
 ## 접근
-`/graphql` 경로로 접근하여 GrahQL Playground를 이용하여 실행합니다.
+`/graphql` 경로로 접근하여 GraphQL Playground를 이용하여 실행합니다.
 
 ### 회원가입
 ```
