@@ -1,0 +1,25 @@
+{
+	"name": "api",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "babel-node src/server.js",
+		"start:mon": "nodemon --exec babel-node src/server.js",
+		"build": "babel src -d build"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"apollo-server-express": "^2.9.6",
+		"bcrypt": "^3.0.6",
+		"dotenv": "^8.1.0",
+		"express": "^4.17.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.7.4",
+		"saslprep": "^1.0.3"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.6.4",
+		"@babel/core": "^7.6.4",
+		"@babel/node": "^7.6.3",
+		"@babel/preset-env": "^7.6.3"
+	}
+}

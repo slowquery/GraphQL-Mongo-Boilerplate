@@ -1,0 +1,11 @@
+# IDE
+.vscode
+# node_modules
+node_modules
+# yarn
+yarn.lock
+yarn-error.log
+# build
+build
+# env
+.env
