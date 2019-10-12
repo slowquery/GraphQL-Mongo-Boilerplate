@@ -1,5 +1,5 @@
 {
-	"name": "api",
+	"name": "graphql-mongo-boilerplate",
 	"version": "1.0.0",
 	"scripts": {
 		"start": "babel-node src/server.js",
