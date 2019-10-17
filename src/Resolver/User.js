@@ -34,13 +34,13 @@ export default {
 			const LoginUser = await MUser.findOne({Email: Email});
 
 			if(!LoginUser) {
-				throw new UserInputError("이메일 또는 비밀번호가 존재하지 않습니다");
+				throw new UserInputError("이메일 또는 비밀번호가 올바르지 않습니다");
 			}
 			
 			const IsPassword = await Util.ValidatePassword(LoginUser.Password, Password);
 
 			if(!IsPassword) {
-				throw new UserInputError("이메일 또는 비밀번호가 존재하지 않습니다");
+				throw new UserInputError("이메일 또는 비밀번호가 올바르지 않습니다");
 			}
 
 			return {AccessToken: Util.SignJwt(LoginUser)};
